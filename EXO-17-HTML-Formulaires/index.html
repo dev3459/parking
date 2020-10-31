@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exo 17 - Formulaire</title>
+</head>
+<body>
+    <form>
+        <div>
+            <label for="nom">Votre nom :</label>
+            <input type="text" id="nom" name="nom" required autofocus>
+        </div>
+        <div>
+            <label for="prenom">Votre prénom :</label>
+            <input type="text" id="prenom" name="prenom" required>
+        </div>
+
+        <div>
+            <label for="dateNaissance">(1ère façon) Votre date de naissance :</label>
+            <input type="text" id="dateNaissance" name="dateNaissance" placeholder="Jour">
+            <input type="month">
+            <br>
+            <label for="dateNaissance2">(1ème façon) Votre date de naissance :</label>
+            <input type="text" id="dateNaissance2" name="dateNaissance2" placeholder="Jour">
+            <select name="month" id="month">
+                <option value="Janvier">Janvier</option>
+                <option value="Février">Février</option>
+                <option value="Mars">Mars</option>
+                <option value="Avril">Avril</option>
+                <option value="Mai">Mai</option>
+                <option value="Juin">Juin</option>
+                <option value="Juillet">Juillet</option>
+                <option value="Août">Août</option>
+                <option value="Septembre">Septembre</option>
+                <option value="Octobre">Octobre</option>
+                <option value="Novembre">Novembre</option>
+                <option value="Décembre">Décembre</option>
+            </select>
+            <input type="text" name="yearNaissance" placeholder="Année">
+        </div>
+        <div>
+            <label for="sexe">Votre sexe :</label>
+            <select id="sexe" name="sexe">
+                <option>Homme</option>
+                <option>Femme</option>
+            </select>
+        </div> 
+        <div>
+            <label for="email">Votre e-mail :</label>
+            <input type="email" id="email" name="mail" placeholder="gaetan.gibert18@@outlook.fr" required>
+        </div>
+        <div>
+            <label for="url">Votre URL GitHub :</label>
+            <input type="url" id="url" name="url">
+        </div>
+        <div>
+            <input type="submit" name="bouton">
+        </div>
+    </form>
+</body>
+</html>
