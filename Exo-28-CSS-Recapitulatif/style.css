@@ -1,0 +1,28 @@
+p:first-child{
+    color:blue;
+}
+
+p:nth-child(2){
+    font-family:'Courier New', Courier, monospace;
+}
+
+p:nth-child(3){
+    text-align: center;
+}
+
+p:nth-child(4){
+    font-size:50px;
+}
+
+p:nth-child(5){
+    background-color:yellow;
+}
+
+p:nth-child(6){
+    text-align:center;
+}
+
+p:nth-child(7){
+    border:1px solid blue; 
+    min-height: 200px;
+}

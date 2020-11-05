@@ -1,0 +1,71 @@
+body{
+    color: corail;
+}
+
+a{
+    text-decoration: none;
+    color: blue;
+}
+
+p{
+    text-shadow: aqua 1px 1px;
+    margin: 15px 15px;
+    padding: 20px 20px;
+    text-indent: 25px;
+}
+
+ul li.unSurDeux{
+    font-style: italic;
+    font-weight: normal;
+}
+
+ul li{
+    font-style: normal;
+    font-weight: bold;
+}
+
+p > a{
+    position: relative;
+    bottom: 1px;
+    font-size: .8em;
+    line-height: .8em;
+    vertical-align:super;
+    text-decoration:none;
+}
+
+a:hover{
+    cursor: pointer;
+}
+
+.cadre{
+    border: 1px solid black;
+    width: 500px;
+    height: 300px;
+    margin: auto;
+}
+
+img{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.ombrePorter{
+    box-shadow: 8px 8px 20px 5px black;
+}
+
+ol li{
+    list-style-type: georgian;
+}
+
+
+.ulol{
+    width: 25%;
+    margin: auto;
+    padding: 10px;
+    margin-top: 20px;
+    border:2px solid black;
+    border-radius: 60px;
+    box-shadow: 10px 10px 20px 5px black, 10px 10px 19px 0px black inset;
+    margin-bottom: 50px;
+}

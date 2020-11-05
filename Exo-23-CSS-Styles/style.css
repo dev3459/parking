@@ -1,0 +1,28 @@
+body{
+    font: 13px/1.5 helvetica, Arial, sans-serif;
+}
+
+h1{
+    font: bold 18px helvetica, Arial, serif;
+    color: #454545;
+}
+
+h1 + p{
+    color: #7a7a7a;
+}
+
+p{
+    margin: 50px 50px;
+    padding: 8px 8px;
+
+}
+
+blockquote{
+    font: italic 14px helvetica, Arial, sans-serif;
+    background-color: #e7f2fa;
+    color:#444;
+}
+
+a{
+    color: #8870FF;
+}

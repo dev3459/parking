@@ -1,0 +1,32 @@
+table tr:nth-child(2n+0) td::first-letter{
+    text-transform: uppercase;
+}
+
+table tr:nth-child(2n+1) td, th{
+    background-color: aqua;
+}
+
+td{
+    width: 40px;
+    height: 20px;
+}
+
+#firstTable{
+    border-collapse: separate;
+    empty-cells: hide;
+}
+
+#secondTable{
+    border-collapse: separate;
+    caption-side: bottom;
+}
+
+#threeTable{
+    border-collapse: collapse;
+}
+
+#fourTable{
+    caption-side: bottom;
+    border-collapse: collapse;
+    empty-cells: hide;
+}
