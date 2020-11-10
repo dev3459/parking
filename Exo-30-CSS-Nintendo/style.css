@@ -1,0 +1,74 @@
+/* Tout en commun */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+
+    line-height: 1.5;
+}
+
+svg{
+    width: 32px;
+}
+
+/* Tout ce qu'il se trouve dans le nav 1 */
+.navbar1{
+    background-color: red;
+}
+
+.nav1Svg1{
+    display: inline-block;
+    width: 120px;
+    padding: 18px 20px;
+}
+
+.login-label{
+    font-size: 0.625em;
+    position: relative;
+    margin-left: 5px;
+    top: -15px;
+    color: #fff;
+}
+
+.right{
+    float: right;
+    padding: 16px 16px;
+}
+
+.divider-vertical {
+    height: 35px;
+    border-right: 1px solid #fff;
+    margin: 0px 10px;
+    position: relative;
+    top: -5px;
+}
+
+
+/* Tout ce qu'il se trouve dans le nav 2 */
+.navbar2{
+    background-color: rgb(207, 3, 3);
+    width: 100px;
+    height: 907px;
+}
+
+.containsNavbar2{
+    background-color: red;
+    padding: 0 32px;
+    font-size: 12px;
+}
+
+.svgNav2{
+    padding-top: 17px;
+}
+
+.texte{
+    color: white;
+    margin-left: -5px;
+    text-align: center;
+}
+
+.mainN {
+    font-size: 2rem;
+    line-height: 1;
+    color: white;
+}

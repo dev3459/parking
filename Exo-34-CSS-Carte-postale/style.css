@@ -1,0 +1,142 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #e1e1e1;
+    font-family: sans-serif;
+    color: #bfbfbf;
+}
+
+.contains{
+    width: 50%;
+    height: 600px;
+    margin: 8% auto;
+}
+
+.letter{
+    background-color: #ffffff;
+    position: relative;
+    top: 80px;
+    width: 80%;
+    height: 500px;
+    margin : 0 auto;
+    box-shadow: 0px 0px 20px 2px gray;
+}
+
+.left{
+    width: 35%;
+    position: relative;
+    top: 25%;
+    padding: 10px;
+    padding-left: 40px;
+}
+
+.barre{
+    border-left: 1px solid #a2a2a2;
+    position: relative;
+    top: -220px;
+    left: 356px;
+    height: 480px;
+    color: black;
+    width: 10px;
+}
+
+.right{
+    position: relative;
+    top: -710px;
+    left: 366px;
+    width: 305px;
+    height: 500px;
+}
+
+.avatar{
+    position: relative;
+    top: 10px;
+    left: 210px;
+    width: 70px;
+    height: 90px;
+    border: 1px solid #a6a6a6;
+}
+
+.border{
+    
+}
+
+.barre1{
+    position: relative;
+    top: 200px;
+    left: 20px;
+    width: 256px;
+    height: 1px;
+    border-bottom: 2px solid #a6a6a6;
+}
+
+.barre2{
+    position: relative;
+    top: 240px;
+    left: 20px;
+    width: 256px;
+    height: 1px;
+    border-bottom: 2px solid #a6a6a6;
+}
+
+.barre3{
+    position: relative;
+    top: 280px;
+    left: 20px;
+    width: 256px;
+    height: 1px;
+    border-bottom: 2px solid #a6a6a6;
+}
+
+.barre4{
+    position: relative;
+    top: 320px;
+    left: 165px;
+    width: 110px;
+    height: 1px;
+    border-bottom: 2px solid #a6a6a6;
+}
+
+.border{
+    border: 1px solid #a6a6a6;
+}
+
+.rect1{
+    position: relative;
+    top: 282px;
+    left: 20px;
+    width: 25px;
+    height: 35px;
+}
+
+.rect2{
+    position: relative;
+    top: 245px;
+    left: 48px;
+    width: 25px;
+    height: 35px;
+}
+
+.rect3{
+    position: relative;
+    top: 208px;
+    left: 76px;
+    width: 25px;
+    height: 35px;
+}
+
+.rect4{
+    position: relative;
+    top: 171px;
+    left: 104px;
+    width: 25px;
+    height: 35px;
+}
+
+.rect5{
+    position: relative;
+    top: 134px;
+    left: 132px;
+    width: 25px;
+    height: 35px;
+}

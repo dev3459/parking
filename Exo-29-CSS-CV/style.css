@@ -1,0 +1,118 @@
+body{
+    font-family: 'Itim', cursive, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    width: 150px;
+    position: absolute;
+    margin-top: 40px;
+    margin-left: 30px;
+    border-radius :50%;
+    box-shadow: 0px 0px 10px 5px black;
+}
+
+.contains{
+    width: 70%;
+    height: 90%;
+    margin: 30px auto;
+    background-color:   #dee0e3;
+    -webkit-box-shadow: 0px 0px 8px 2px #bdc0c4;
+    -moz-box-shadow: 0px 0px 8px 2px #bdc0c4;
+    box-shadow: 0px 0px 8px 2px #bdc0c4;
+}
+
+h1{
+    text-align: center;
+}
+
+.contact{
+    text-align: right;
+    margin-right: 50px;
+}
+
+.cursusScolaire, .competenceInformatique, .formContact{
+    width: 70%;
+    margin-left: 2%;
+    margin-bottom: 25px;
+    padding: 5px;
+    background-color: #dee0e3;
+    border: 3px double #c2c3c5;
+    -webkit-box-shadow: 0px 0px 8px 2px #b9babb inset;
+    -moz-box-shadow: 0px 0px 8px 2px #b9babb inset;
+    box-shadow: 0px 0px 5px 2px #b9babb inset;
+    line-height: 2.5;
+}
+
+
+.parcoursPro, .hobbies{
+    width: 70%;
+    margin-left: 27%;
+    margin-bottom: 25px;
+    padding: 5px;
+    background-color: #dee0e3;
+    border: 3px double #c2c3c5;
+    -webkit-box-shadow: 0px 0px 8px 2px #b9babb inset;
+    -moz-box-shadow: 0px 0px 8px 2px #b9babb inset;
+    box-shadow: 0px 0px 5px 2px #b9babb inset;
+    line-height: 2.5;
+}
+
+
+.cursusScolaire h2, .parcoursPro h2, .competenceInformatique h2, .hobbies h2, .formContact h2{
+    color: blue;
+    text-align: center;
+}
+
+.cursusScolaire ul, .parcoursPro ol, .parcoursPro ul{
+    width: 80%;
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+.competenceInformatique ul, .hobbies ul{
+    width: 15%;
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+.parcoursPro ol{
+    color: red;
+}
+
+.parcoursPro ul{
+    color: black;
+}
+
+form, label, input, textarea{
+    display: block;
+    resize: none;
+}
+
+label{
+    min-width: 300px;
+    width: 300px;
+    margin: 0 auto;
+}
+
+input, textarea{
+    min-width: 300px;
+    margin: 10px auto;
+    box-shadow: 3px 3px 6px #555, 3px 3px 6px #555 inset;
+    padding: 5px;
+    border-radius: 5px;
+}
+input[type="submit"]{
+    box-shadow: 3px 3px 6px #555;
+    padding: 5px;
+    margin: auto;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 5px;
+    margin-bottom: 15px;
+}
+input:hover{
+    border:blue 2px solid;
+}
