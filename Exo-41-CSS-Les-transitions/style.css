@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+    
+html {
+    font-size: 62.5%;
+}
+    
+body {
+    width: 100%;
+}
+
+#container {
+    width: 100%;
+}
+
+.premiereDIV {
+    width: 20rem;
+    height: 20rem;
+    background-color: black;
+    transition: all 6s ease-in-out 500ms;
+}
+
+.premiereDIV:hover {
+    width: 30rem;
+    height: 30rem;
+    background-color: lightgray;
+}
+
+.divLorem {
+    width: 20rem;
+    height: 20rem;
+}
+
+.divLorem p {
+    color: blue;
+    font-size: 1rem;
+    transition: all 2s linear;
+}
+
+.divLorem:hover p {
+    color: orange;
+    font-size: 2rem;
+}
+
+@media screen and (max-width: 700px) {
+    .premiereDIV {
+        width: 100%;
+        height: 50rem;
+        margin: 0px auto;
+    }
+
+    .premiereDIV:hover {
+        width: 80%;
+        margin: 0px auto;
+    }
+
+    .divLorem  {
+        width: 100%;
+    }
+
+    .divLorem p {
+        font-size: 3rem;
+    }
+}

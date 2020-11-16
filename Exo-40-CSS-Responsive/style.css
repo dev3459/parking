@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100%;
+}
+
+#container {
+    width: 80%;
+    background-color: rgb(17, 0, 112);
+    margin: auto;
+    font-size: 1.5rem;
+}
+
+.ib {
+    display: inline-block;
+    margin: 2rem;
+    border: 2px solid orange;
+}
+
+.div1 {
+    width: 40%;
+    background-color: yellow;
+}
+
+.div2, .div3 {
+    width: 20%;
+}
+
+.div2 {
+    background-color: rgb(15, 223, 223);
+}
+
+.div3 {
+    background-color: rgb(177, 116, 116);
+}
+
+@media screen and (max-width: 827px) {
+    #container {
+        width: 100%;
+        font-size: 2.5rem;
+    }
+
+    .ib {
+        margin: 0 auto;
+        display: block;
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .ib {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    a, span, .div3 > p {
+        display: none;
+    }
+}

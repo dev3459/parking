@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+caption{
+    font-weight: bold;
+}
+
+caption sup{
+    color: blue;
+}
+
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin: 15% auto;
+}
+
+td, th {
+    border: 1px solid black;
+    padding: 5px;
+    text-align: center;
+}
+
+th{
+    font-weight: bold;
+}
+
+tr th:nth-child(3){
+    color: rgb(3, 3, 192);
+}
+
+tr th:nth-child(4){
+    color: rgb(212, 0, 0);
+}
+
+tr th:nth-child(4) span, tr th:nth-child(7) span{
+    font-size: 14px;
+}
+
+tr th:nth-child(4) span, tr th:nth-child(5), tr th:nth-child(6), tr th:nth-child(7) span, tr th:nth-child(8){
+    color: rgb(0, 21, 212);
+}
+
+tr th:nth-child(3)::first-letter{
+    text-transform: uppercase;
+}
+
+.color th:nth-child(1) {
+    background-color: rgb(5, 199, 199);
+}
+
+.color th:nth-child(2) {
+    background-color: rgb(233, 1, 1);
+}
+
+.color th:nth-child(3) {
+    background-color: rgb(192, 20, 115);
+}
+
+.color th:nth-child(4) {
+    background-color: rgb(255, 0, 221);
+}
+
+.color th:nth-child(5) {
+    background-color: rgb(255, 230, 0);
+}
+
+.annee{
+    color: rgb(0, 0, 161);
+}
+
+td:nth-child(1), td:nth-child(2){
+    font-weight: bold;
+}
