@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100%;
+    font-size: 1.5rem;
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    height: 10rem;
+    align-items: center;
+}
+
+nav ul li {
+    display: flex;
+    flex-basis: 20%;
+    flex-wrap: wrap;
+    transition: flex-grow 1s linear;
+
+}
+
+nav ul li:hover {
+    flex-grow: 1;
+    align-self: stretch;
+}
+
+nav ul li a{
+    align-items: center;
+    display: inline-block;
+    padding: 1rem;
+    flex-basis: 100%;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+ul li:nth-child(1) a {
+    background-color: rgb(28, 189, 157);
+    transition: background-color 0.5s linear;
+}
+
+ul li:nth-child(1) a:hover {
+    background-color: rgba(28, 189, 157,0.6);
+}
+
+ul li:nth-child(2) a {
+    background-color: rgb(54, 153, 219);
+    transition: background-color 0.5s linear;
+}
+
+ul li:nth-child(2) a:hover {
+    background-color: rgba(54, 153, 219, 0.6);
+}
+
+ul li:nth-child(3) a {
+    background-color: rgb(156, 90, 183);
+    transition: background-color 0.5s linear;
+}
+
+ul li:nth-child(3) a:hover {
+    background-color: rgba(156, 90, 183, 0.6);
+}
+
+ul li:nth-child(4) a {
+    background-color: rgb(230, 127, 36);
+    transition: background-color 0.5s linear;
+}
+
+ul li:nth-child(4) a:hover {
+    background-color: rgba(230, 127, 36, 0.6);
+}
+
+ul li:nth-child(5) a {
+    background-color: rgb(231, 77, 62);
+    transition: background-color 0.5s linear;
+}
+
+ul li:nth-child(5) a:hover {
+    background-color: rgba(231, 77, 62, 0.6);
+}
+
+@media screen and (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+    }
+}

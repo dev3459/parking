@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100%;
+    background-color: antiquewhite;
+    font-size: 1.5rem;
+}
+
+@keyframes anim {
+    From {
+        transform: rotate(0deg);
+    }
+
+    To {
+        transform: rotate(380deg);
+    }
+}

@@ -1,0 +1,24 @@
+#foo {
+    width: 100px;
+    height: 100px;
+    background: red;
+    animation-name : bgChange;
+    animation-duration : 2s;
+    animation-fill-mode : forwards;
+    animation-iteration-count: infinite;
+}
+
+@keyframes bgChange {
+    0% {
+        background-color: red;
+    }
+
+    50% {
+        background-color: green;
+    }
+
+    100% {
+        background-color: red;
+    }
+}
+

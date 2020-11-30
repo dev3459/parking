@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+    
+html {
+    font-size: 62.5%;
+}
+    
+body {
+    width: 100%;
+    font-family: cursive;
+}
+
+nav {
+    width:  100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+nav > ul > li {
+    display: inline-block;
+    position: relative;
+    transition: background-color 1s linear;
+}
+
+nav > ul > li:hover {
+    display: inline-block;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav > ul > li > a {
+    padding: 2rem;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: #FFF;
+    font-size: 1.5rem;
+}
+
+.sousMenu {
+    display: none;
+}
+
+nav li:hover .sousMenu {
+    display: inline-block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 0;
+    z-index: 1;
+}
+
+.sousMenu li{
+    border-bottom: 1px solid rgb(0, 162, 255);
+}
+
+.sousMenu li a {
+    padding: 1rem;
+    width: 15rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    transition: background-color 1s linear;
+}
+
+.sousMenu li a:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.menuMobile {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .menuMobile {
+        display: block;
+        text-align: right;
+        color: white;
+        font-size: 2.5rem;
+        margin-right: 1rem;
+    }
+
+    nav > ul > li {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .menuMobile i {
+        margin: 0.8rem 0;
+        cursor: pointer;
+        padding: 2rem;
+        border-radius: 20%;
+    }
+    
+    .menuMobile i:hover {
+        background-color: rgba(68, 89, 160, 0.8);
+    }
+
+    nav li:hover .sousMenu {
+        display: none;
+    }
+}

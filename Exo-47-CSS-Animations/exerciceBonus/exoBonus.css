@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+    
+html {
+    font-size: 62.5%;
+}
+    
+body {
+    width: 100%;
+}
+
+#rect {
+    width: 200px;
+    height: 100px;
+    background-color: red;
+}
+
+#roue1 {
+    display: inline-block;
+
+    position: relative;
+     width: 50px;
+     height: 50px;
+     left: 10px;
+     border-radius: 100%;
+     border-style: dashed;
+     background-color: blue;
+     animation-name: rotation-roue;
+     animation-duration: 10s;
+}
+
+#roue2 {
+    display: inline-block;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    left: 80px;
+    border-radius: 100%;
+    border-style: dashed;
+    background-color: blue;
+    animation-name: rotation-roue;
+    animation-duration: 10s;
+}
+
+
+#voiture {
+    top: 150px;
+    position: absolute;
+    animation-name: direction-voiture;
+    animation-duration: 10s;
+}
+
+
+@keyframes direction-voiture {
+    From {
+        left: 0;
+    }
+
+    To {
+        left: 80%;
+    }
+}
+
+@keyframes rotation-roue {
+    From {
+        transform: rotate(0);
+    }
+
+    To {
+        transform: rotate(360deg);
+    } 
+}
+
+
+#ciel {
+    position: absolute;
+    background-color: aqua;
+    width: 100%;
+    height: 300px;
+}
+
+#n1 {
+    top: 0;
+    left: 20px;
+    position: absolute;
+    border-radius: 100%;
+    background-color: white;
+    width: 50px;
+    height: 50px;
+}
+
+#n2 {
+    top: 25px;
+    left: 0;
+    border-radius: 100%;
+    background-color: white;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+}
+
+#n3 {
+    top: 25px;
+    left: 50px;
+    border-radius: 100%;
+    background-color: white;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+}
+
+#n4 {
+    top: 50px;
+    left:30px;
+    border-radius: 100%;
+    background-color: white;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+}
+
+#nuage {
+    position: absolute;
+    animation-name: nuage;
+    animation-duration: 20s;
+}
+
+@keyframes nuage {
+    From {
+        left: 0;
+    }
+
+    To {
+        left: 80%;
+    }
+}

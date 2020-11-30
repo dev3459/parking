@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+header {
+    background-color: #808080;
+    color: #FFF;
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header img {
+    width: 15rem;
+    margin: 3rem 3rem;
+    padding: 1rem 1rem;
+    height: auto;
+    background-color: #FFF;
+}
+
+header nav ul {
+    display: flex;
+}
+
+header nav ul li {
+    padding: 2rem;
+    list-style-type: none;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #FFF;
+    text-transform: uppercase;
+}
+
+h1 {
+    color: #808080;
+    flex-basis: 100%;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: minmax(200px, auto) minmax(200px, auto) minmax(200px, auto);
+    grid-template-areas:
+        "aside sectionun sectionun sectionun"
+        "aside sectiondeux sectiondeux sectiondeux"
+        "aside sectiondeux sectiondeux sectiondeux";
+    gap: 10px;
+}
+
+aside, section, article {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+aside {
+    grid-area: aside;
+    background-color: #eeeeee;
+    margin-left: 2rem;
+}
+
+.sectionun {
+    grid-area: sectionun;
+    background-color: #eeeeee;
+    margin: 0 2rem;
+}
+
+.sectiondeux {
+    grid-area: sectiondeux;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: minmax(200px, auto) minmax(200px, auto) minmax(200px, auto);
+    grid-template-areas:
+        "p p p"
+        "articleun articledeux articletrois"
+        "articleun articledeux articletrois"
+        "articleun articledeux articletrois";
+    gap: 10px;
+    background-color: #eeeeee;
+    margin: 0 2rem;
+}
+
+article {
+    background-color: #808080;
+    height: 100%;
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+    text-transform: uppercase;
+    color: #505050;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.parah {
+    grid-area: p;
+}
+
+.articleun {
+    grid-area: articleun;
+}
+.articledeux {
+    grid-area: articledeux;
+}
+.articletrois {
+    grid-area: articletrois;
+}
+
+footer {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #808080;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 1rem 1rem;
+}

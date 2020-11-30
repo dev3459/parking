@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100%;
+}
+
+i {
+    display: none;
+}
+
+nav {
+    font-size: 1.5rem;
+    background-color: black;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 1rem;
+    width: 100%;
+}
+
+nav ul li {
+    margin: 0.5rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0.8rem;
+    transition: background-color 0.3s linear, color 0.3s linear;
+}
+
+nav ul li a:hover {
+    color: gray;
+    background-color: blanchedalmond;
+}
+
+@media screen and (max-width: 600px) {
+    nav ul {
+        padding: 0;
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 1rem;
+        text-align: center;
+    }
+
+    nav ul li a {
+        display: block;
+        width: 100%;
+    }
+}

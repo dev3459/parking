@@ -1,0 +1,48 @@
+#foo {
+    width: 250px;
+    height: 250px;
+    background: red;
+
+    animation-name : foo-animation;
+    animation-duration : 8s;
+    animation-fill-mode : forwards;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+@keyframes foo-animation {
+    5% {
+        width: 265px;
+        height:265px;
+    }
+    25% {
+        background : orange;
+        width: 150px;
+        height: 150px;
+    }
+    75% {
+        width: 200px;
+        height: 200px;
+        left:5px
+    }
+    100% {
+        width:25px;
+        height : 25px;
+        background : purple;
+        top:50px;
+        left:65px
+    }
+}
+
+#bar {
+    width: 85px;
+    height: 85px;
+    background : blue;
+    position: absolute;
+    left: 500px;
+    top: 25px;
+    animation-name : foo-animation;
+    animation-duration : 2s;
+    animation-fill-mode : forwards;
+}

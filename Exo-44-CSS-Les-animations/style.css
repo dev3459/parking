@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+    
+html {
+    font-size: 62.5%;
+}
+    
+body {
+    width: 100%;
+}
+
+.premiereAnimation {
+    width: 20rem;
+    height: 20rem;
+    background-color: black;
+    color: white;
+    animation: premierAnim 1s infinite;
+}
+
+@keyframes premiereAnim{
+    0% {
+        transform: scale(20rem, 10rem);
+    }
+    10% {
+        transform: scale(10rem, 10rem);
+    }
+    20% {
+        transform: scale(20rem, 10rem);
+
+    }
+    100% {
+        transform: scale(10rem, 10rem);
+    }
+}

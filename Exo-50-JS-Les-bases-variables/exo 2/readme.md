@@ -1,0 +1,1 @@
+Définir trois variables : *nom*, *prenom* et *ville*. Les afficher comme sur l'image correspondant à l'exercice.

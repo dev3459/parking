@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+    
+html {
+    font-size: 62.5%;
+}
+    
+body {
+    width: 100%;
+}
+
+.content {
+    width: 100%;
+    height: 70rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.enfant {
+    flex-basis: 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.color9 {
+    flex-basis: 63rem;
+}
+
+p {
+    font-size: 1.5rem;
+    padding: 1rem;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 28px;
+}
+
+.color1, .color6 {
+    background-color: rgb(23, 173, 116);
+}
+
+.color2, .color7 {
+    background-color: rgb(2, 150, 196);
+}
+
+.color3, .color8 {
+    background-color: rgb(172, 5, 163);
+}
+
+.color4, .color9 {
+    background-color: rgb(206, 120, 7);
+}
+
+.color5 {
+    background-color: rgb(190, 10, 10);
+}
