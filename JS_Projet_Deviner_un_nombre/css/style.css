@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body{
+    width: 100%;
+}
+
+.content {
+    width: 30%;
+    margin: 1rem auto;
+    background-color: #DDD;
+    min-width: 400px;
+    border: 1px solid cyan;
+    box-shadow: 0 0 4px darkblue;
+    border-radius: 5px;
+
+}
+
+.content .title{
+    width: 100%;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.content .title h1 {
+    color: #2d78e0;
+    background-color: aliceblue;
+    padding: 1.5rem;
+    text-transform: uppercase;
+}
+
+.contentregle{
+    font-size: 1.5rem;
+    width: 60%;
+    margin: 1rem auto 6rem auto;
+    box-shadow: 0 0 4px black;
+    padding: 1rem;
+}
+
+.contentregle h2{
+    margin-bottom: 1.5rem;
+    color: green;
+}
+
+.contentregle p{
+    font-size: 2rem;
+}
+
+.contentgame {
+    text-align: center;
+}
+
+.content .champs {
+    width: 100%;
+    min-width: 380px;
+    display: flex;
+    justify-content: center;
+}
+
+label, input, button, textarea{
+    display: block;
+    margin: 0.8rem auto;
+}
+
+label {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+#textDevinerLbl {
+    text-align: left;
+    font-weight: bold;
+    font-family: Bahnschrift;
+    color: #2d78e0;
+}
+
+#textDeviner {
+    padding: 0.5rem;
+}
+
+#btnSubmit {
+    padding: 1rem;
+}
+
+#btnRecommencer {
+    display: none;
+    padding: 1rem;
+}
+

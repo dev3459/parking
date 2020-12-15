@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to bottom, #30cfd0 0%, #330867 100%);
+}
+
+h1{
+    text-align: center;
+    color: blue;
+    font-size: 3rem;
+    padding-top: 3rem;
+}
+
+p{
+    width: 70%;
+    background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+    margin: 4rem auto;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: monospace;
+    font-size:  50px;
+
+}
+
+.morpion{
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 50vh;
+    height: 50vh;
+}
+
+.case{
+    cursor: pointer;
+    width: calc(1/3 * 100%);
+    height: calc(1/3 * 100%);
+    border: 1px solid azure;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+#rejouer{
+    margin: 1rem auto;
+    width: 100%;
+    padding: 1rem;
+    text-transform: uppercase;
+    background-color: #30cfd0;
+    font-weight: bold;
+    cursor: pointer;
+    display: none;
+}
+
+#rejouer:hover{
+    background-color: #2ab9ba;
+}
+
+#rejouer:active{
+    background-color: #1f898a;
+}

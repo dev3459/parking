@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<title>Essai DHTML</title>
+	<meta charset="UTF-8">
+	<script>
+		function change_liste()
+			{
+				let compteur = 0;
+				let list = document.getElementsByTagName("ul");
+				while (compteur < list.length) {
+					let compteurEnfant = 0;
+					let listEnfant = document.getElementsByTagName("li");
+					while (compteurEnfant < listEnfant.length) {
+						listEnfant.item(compteurEnfant).innerHTML = "blabla";
+						compteurEnfant ++;
+					}
+					list.item(compteur).style.listStyle = "circle";
+					compteur ++;
+				}
+			}
+	</script>
+
+</head>
+<body onclick="change_liste()">
+	<ul>
+		<li>a</li>
+		<li>b</li>
+		<li>c</li>
+		<li>d</li>
+		<li>e</li>
+		<li>f</li>
+		<li>g</li>
+		<li>h</li>
+	</ul>
+</body>
+</html>

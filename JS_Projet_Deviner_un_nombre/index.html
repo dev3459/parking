@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>JS - Devinette</title>
+    <script src="js/app.js" async></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="content">
+        <div class="title">
+            <h1 id="message">Le jeu de la devinette !</h1>
+        </div>
+        <div class="contentregle">
+            <h2>Règle du jeu :</h2>
+            <p>
+                Ce jeu génère un chiffre aléatoire entre 0 et 100 !<br>
+                Votre but et de trouver ce numéro grâce à l'aide du plus grand ou petit que !
+            </p>
+        </div>
+        <div class="contentgame">
+            <div class="champs">
+                <form action="#" method="POST">
+                    <label for="textDeviner" id="textDevinerLbl">Tapez un chiffre</label>
+                    <input type="text" id="textDeviner" name="textDeviner">
+                    <button id="btnSubmit">Proposer ce chiffre</button>
+                    <button id="btnRecommencer">Rejouer ?</button>
+                </form>
+            </div>
+            <div class="restant">
+                <label id="nbrRestant">
+                    Nombre d'essai restant : <span id="chiffreRestant">10</span>
+                </label>
+                <label for="nbrEssai" id="nbrEssaiLbl">Nombre déjà essayé :</label>
+                <textarea name="nbrEssai" id="nbrEssai" cols="30" rows="10" readonly="readonly"></textarea>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
