@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+    
+html{
+    font-size: 62.5%;
+}
+    
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(50, 190, 255);
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container{
+    display: flex;
+    justify-content: center;
+    width: 97%;
+    background-color: white;
+}
+
+#historique{
+    display: flex;
+    flex-direction: column;
+    margin-right: 10rem;
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
+
+#historique label{
+    color: blue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.5rem;
+}
+
+#historique textarea{
+    height: 31rem;
+    margin-top: 2rem;
+    background-color: snow;
+    padding: 1rem;
+    font-size: 2rem;
+    border: cyan 3px double;
+    margin-bottom: 2rem;
+    resize: none;
+}
+
+#tourPlayer{
+    text-align: center;
+    margin-top: 2rem;
+    color: blue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#img{
+    display: flex;
+    justify-content: center;
+}
+
+.img{
+    width: 30rem;
+    height: 30rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 2rem;
+    background-color: blue;
+    cursor: pointer;
+    transition: background-color 0.5s;
+    border-radius: 10px;
+    box-shadow: 0 0 4px 4px black;
+}
+
+.img:hover{
+    background-color: springgreen;
+}
+
+.img:active{
+    background-color: steelblue;
+}
+
+#pierre{
+    background-image: url("../img/roche.png");
+    background-size: 20rem;
+}
+
+#feuille{
+    background-image: url("../img/feuille.png");
+    background-size: 20rem;
+}
+
+#ciseaux{
+    background-image: url("../img/ciseaux.png");
+    background-size: 12rem;
+}
+
+#win{
+    text-align: center;
+    color: green;
+    margin-bottom: 2rem;
+    display: none;
+}
+
+#rejouer{
+    width: 100%;
+    height: 5rem;
+    color: red;
+    background-color: rgb(50, 190, 255);
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: none;
+}
+
+#rejouer:hover{
+    background-color: rgb(0, 111, 155);
+}
+
+#rejouer:active{
+    background-color: rgba(0, 89, 255, 0.801);
+}
+
+@media screen and (max-width: 1442px){
+    #container{
+       width: 100%;
+       flex-direction: column;
+       justify-content: flex-start;
+    }
+
+    textarea{
+        width: 20rem;
+    }
+}
