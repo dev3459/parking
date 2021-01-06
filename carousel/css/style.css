@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+    
+html{
+    font-size: 62.5%;
+}
+    
+body{
+    width: 100%;
+    height: 100vh;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right, #243949 0%, #517fa4 100%);
+}
+
+.container{
+    width: 700px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 50%;
+    box-shadow: 0 0 600px 4px rgb(230, 234, 255);
+}
+
+.slide{
+    display: flex;
+    width: 100%;
+    height: 500px;
+}
+
+img{
+    width: 700px;
+}
+
+#precedentBtn{
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    left: 5%;
+    font-size: 4rem;
+    color: rgb(230, 234, 255);
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+#suivantBtn{
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    right: 5%;
+    font-size: 4rem;
+    color: rgb(230, 234, 255);
+    opacity: 0.6;
+    cursor: pointer;
+}

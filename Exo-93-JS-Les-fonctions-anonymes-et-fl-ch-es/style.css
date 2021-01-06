@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100%;
+}
+
+#alert:hover{
+    background-color: cadetblue;
+    color: white;
+    cursor: pointer;
+}
+
+#alert:not(:hover){
+    background-color: orange;
+    color: black;
+    cursor: pointer;
+}
+
+#alert:active{
+    background-color: cyan;
+    color: white;
+    cursor: pointer;
+}
+
+#somme:hover{
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+
+#somme:not(:hover){
+    background-color: green;
+    color: black;
+    cursor: pointer;
+}
+
+#somme:active{
+    background-color: yellow;
+    color: white;
+    cursor: pointer;
+}
