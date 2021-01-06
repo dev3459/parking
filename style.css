@@ -32,11 +32,11 @@ h1 {
     letter-spacing: 0.2rem;
 }
 
-.css, .html {
+.css, .html, .js {
     margin: 4rem 0;
 }
 
-.css h3, .html h3 {
+.css h3, .html h3, .js h3 {
     color: blue;
     font-family: cursive;
     margin-bottom: 2.5rem;
@@ -48,7 +48,7 @@ h1 {
     display: inline-block;
 }
 
-.css ul, .html ul{
+.css ul, .html ul, .js ul{
    list-style-type: none;
 }
 
