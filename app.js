@@ -5,8 +5,8 @@ let dossierCSS = "Exo-19-Les-tableaux-mon-choix|Exo-20-Blog-de-recettes|Exo-21-L
 let dossierJS = "Exo-50-JS-Les-bases-variables|Exo-51-JS-Les-operations|Exo-52-JS-Les-conditions|Exo-53-Introduction-au-DOM|Exo-54-JS-Operateurs-logiques|Exo-55-JS-Operateur-ternaire|Exo-56-JS-Switch|Exo-57-JS-Bases|Exo-58-JS-Switch|Exo-59-JS-Compte-a-rebours|Exo-60-JS-Bases-2|Exo-61-JS-While|Exo-62-JS-For|Exo-63-Age-du-capitaine|Exo-64-FizzBuzz|Exo-65-JS-break-continue|Exo-66-JS-Fonctions-natives|Exo-67-JS-Fonctions-personnalisees-1|Exo-68-JS-Fonctions-personnalisees-2|Exo-69-JS-Boucles-et-elements|Exo-70-JS-Code-a-debug|Exo-71-JS-DOM|Exo-72-JS-DOM-2|Exo-73-JS-DOM-3|Exo-74-JS-DOM-4|Exo-75-JS-Switch-input-values|Exo-76-JS-Kenny|Exo-77-JS-Fonctions|Exo-78-JS-Les-strings|Exo-79-Les-Strings-2|Exo-80-JS-Les-Numbers|Exo-81-JS-Events|Exo-82-JS-Objet-Math|Exo-83-JS-Tableaux|Exo-84-JS-Les-tableaux-liste-de-courses|Exo-85-JS-Les-objets|Exo-86-JS-Les-tableaux-d-objets|Exo-87-JS-Objet-concessionnaire|Exo-88-R-visions-JS|Exo-89-JS-Les-Dates|Exo-90-JS-Revisions-Mega-Pack|Exo-91-JS-Les-objets-intanciables-1|Exo-93-JS-Les-fonctions-anonymes-et-fl-ch-es|Exo-94-JS-Les-fonctions-anonymes-et-fl-ch-es-2|Exo-95-JS-fonctions-a-parametres-variables|Exo-96-JS-fonctions-recursives|Exo-97-JS-setTimeout-et-setInterval|Exo-98-JS-setTimeout-recursif|Exo-100-JS-Heritage-et-prototypes|Exo-101-JS-Heritage-et-classes|Exo-102-JS-Introduction-au-BOM|Exo-103-JS-Gestion-des-erreurs|Exo-104-JS-Realiser-des-fonctions-de-gestion-des-cookies|Exo-105-JS-Le-local-storage|Exo-106-JS-Les-modules|Exo-107-JS-Les-datasets|carousel|ChiFouMi|Compte-a-rebour|createHistory|EvaluationMorpion|JS_Projet_Deviner_un_nombre|Pendu|WindowModal|calculatrice";
 
 let arrayDossierHTML = dossierHTML.split('|');
-let arrayDossierCSS = dossierCSS.split('|');
-let arrayDossierJS = dossierJS.split('|');
+let arrayDossierCSS  = dossierCSS.split('|');
+let arrayDossierJS   = dossierJS.split('|');
 
 for(let i = 0; i < arrayDossierHTML.length; i++){
     create(arrayDossierHTML[i], "lien", document.getElementById('ulHTML'));
@@ -20,14 +20,14 @@ for(let i = 0; i < arrayDossierJS.length; i++){
     create(arrayDossierJS[i], "lien", document.getElementById('ulJS'));
 }
 
-function create(innerHTML, className, parent, title, href){
-    let li = document.createElement('li');
+function create(innerHTML, className, parent){
+    let li       = document.createElement('li');
     li.className = className;
     parent.append(li);
 
     let a = document.createElement('a');
     a.innerHTML = innerHTML;
-    a.title = innerHTML;
-    a.href =  innerHTML;
+    a.title     = innerHTML;
+    a.href      = innerHTML;
     li.append(a);
 }
