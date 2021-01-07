@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100%;
+}
+
+#container {
+    width: 70%;
+    margin: 2rem auto;
+    font-size: 1.8rem;
+}
+
+h3 {
+    color: blue;
+    font-family: cursive;
+    margin-bottom: 2.5rem;
+    margin-left: 1.5rem;
+}
+
+ul li {
+    list-style-type: none;
+    margin-bottom: 1.5rem ;
+}
+a {
+    color: rgb(72, 72, 206);
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(0, 0, 97);
+    text-decoration: none;
+}

@@ -1,4 +1,14 @@
-let mots = ["chaise", "feuille", "banane", "camion", "chaussure", "gendarme", "souris", "ascenseur", "brouette", "chemise"];
+let mots = [
+    "chaise", 
+    "feuille", 
+    "banane", 
+    "camion", 
+    "chaussure", 
+    "gendarme", 
+    "souris", 
+    "ascenseur", 
+    "brouette", 
+    "chemise"];
 let input = document.getElementById("user-letter");
 let buttonVerify = document.getElementById("letterTry");
 let divEssai = document.getElementById("essai");
@@ -11,7 +21,6 @@ let img = document.getElementById('img');
 img.src = 'img/imgPrincipal.png';
 
 divEssai.innerHTML = "essais restant " + essais;
-console.log(motRandom);
 
 for (let i = 0; i < motRandom.length; i++) {
     answerTableau[i] = "_";
@@ -54,5 +63,3 @@ function historique(){
     para.innerHTML = input.value;
     history.appendChild(para);
 }
-
-function j

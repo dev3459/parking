@@ -37,6 +37,7 @@
 }
 
 #helice {
+    height: 300px;
     transform-origin: center;
     animation-name: rotHelice;
     animation-duration: 5s;
