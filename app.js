@@ -28,6 +28,6 @@ function create(innerHTML, className, parent){
     let a       = document.createElement('a');
     a.innerHTML = innerHTML;
     a.title     = innerHTML;
-    a.href      = innerHTML;
+    a.href      = "/parking/" + innerHTML;
     li.append(a);
 }
