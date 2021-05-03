@@ -1,3 +1,4 @@
+//Hangman word list
 let mots = [
     "chaise", 
     "feuille", 
@@ -9,6 +10,8 @@ let mots = [
     "ascenseur", 
     "brouette", 
     "chemise"];
+
+//Recovery of all the elements
 let input = document.getElementById("user-letter");
 let buttonVerify = document.getElementById("letterTry");
 let divEssai = document.getElementById("essai");
@@ -20,13 +23,16 @@ let essais = 6;
 let img = document.getElementById('img');
 img.src = 'img/imgPrincipal.png';
 
+//Display of the number of attempts
 divEssai.innerHTML = "essais restant " + essais;
 
+//Showing hidden words
 for (let i = 0; i < motRandom.length; i++) {
     answerTableau[i] = "_";
     guessWord.innerHTML = answerTableau.join(" ");
 }
 
+//Checking if the letter is contained in the hangman's word
 buttonVerify.addEventListener("click", function () {
     let letter = input.value;
     let found = true;
@@ -54,12 +60,3 @@ buttonVerify.addEventListener("click", function () {
         window.location.reload();
     }
 });
-
-let history = document.getElementById('history');
-
-function historique(){
-    let para = document.createElement("p");
-    para.id = "pHistory";
-    para.innerHTML = input.value;
-    history.appendChild(para);
-}
